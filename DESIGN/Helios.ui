@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProdCreatorDialog</class>
+ <widget class="QDialog" name="ProdCreatorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>653</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#f9fafc;</string>
+  </property>
+  <widget class="QTabWidget" name="Helios">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>70</y>
+     <width>641</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::North</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="elideMode">
+    <enum>Qt::ElideMiddle</enum>
+   </property>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Ephémérides solaires</string>
+    </attribute>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>311</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QDoubleSpinBox" name="gpsLat">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>62</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;</string>
+      </property>
+      <property name="decimals">
+       <number>4</number>
+      </property>
+      <property name="minimum">
+       <double>-90.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>90.989999999999995</double>
+      </property>
+      <property name="singleStep">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>36.752800000000001</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="gpsLong">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>62</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;</string>
+      </property>
+      <property name="decimals">
+       <number>4</number>
+      </property>
+      <property name="minimum">
+       <double>-180.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>180.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>3.042000000000000</double>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="gpsC">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;</string>
+      </property>
+      <property name="minimum">
+       <number>-12</number>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>λ</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_16">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>φ </string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>UTC</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>165</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;color:#000028; border:0px solid #3c80e5 ;
+
+border: 0px solid  #808080;</string>
+      </property>
+      <property name="text">
+       <string>Latitude °</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>165</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;color:#000028; border:0px solid #3c80e5 ;
+
+border: 0px solid  #808080;</string>
+      </property>
+      <property name="text">
+       <string>Longitude °</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>165</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;color:#000028; border:0px solid #3c80e5 ;
+
+border: 0px solid  #808080;</string>
+      </property>
+      <property name="text">
+       <string>Correction du fuseau horaire</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Coordonnées GPS du lieu</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>10</y>
+       <width>301</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButton_18">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #a4a5a7; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/date.png</normaloff>../IMAGES/date.png</iconset>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="timeDate">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>145</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white; border:1px solid #3c80e5 ;</string>
+      </property>
+      <property name="minimumDate">
+       <date>
+        <year>2020</year>
+        <month>9</month>
+        <day>14</day>
+       </date>
+      </property>
+      <property name="displayFormat">
+       <string>dd/MM/yyyy</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2021</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>30</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #a4a5a7; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/time.png</normaloff>../IMAGES/time.png</iconset>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeTime">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>145</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:white; border:1px solid #3c80e5 ;</string>
+      </property>
+      <property name="displayFormat">
+       <string>HH:mm:ss</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Données horaires</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>Jour Julien</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../../../../../../ManagerSys/5.0-RESTAURENT_CLASSIC/IMAGES/Icons/date.png</normaloff>../../../../../../../../ManagerSys/5.0-RESTAURENT_CLASSIC/IMAGES/Icons/date.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="JDay">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>110</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2;color:#000028; border:0px solid #3c80e5 ;
+
+border: 0px solid  #808080;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="timeCalcul">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+      </property>
+      <property name="text">
+       <string>Calcul.</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="timeInit">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+      </property>
+      <property name="text">
+       <string>Départ.</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color:white; color : #17afd3; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:#78d700;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/clear.png</normaloff>../IMAGES/clear.png</iconset>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>20</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>621</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>40</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>TSM</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>115</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>δ°</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>315</x>
+        <y>115</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>ω°</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_23">
+      <property name="geometry">
+       <rect>
+        <x>315</x>
+        <y>40</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>ψ°</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_24">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>H°</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Coordonnées Horizontales</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>291</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Coordonnées Equatoriales</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_25">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>80</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>EqT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_26">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>115</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string>TSV</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../IMAGES/Icons/menu.png</normaloff>../../IMAGES/Icons/menu.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>10</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temps solaire</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarTSM">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>40</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarEqt">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>80</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarTSV">
+      <property name="geometry">
+       <rect>
+        <x>55</x>
+        <y>115</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarH">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>40</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarA">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>40</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarD">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>115</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="solarAngH">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>115</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>35</y>
+        <width>20</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>455</x>
+        <y>35</y>
+        <width>20</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_28">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>40</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/sunrise.png</normaloff>../IMAGES/sunrise.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_29">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>80</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/sunset.png</normaloff>../IMAGES/sunset.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="sunSet">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>80</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="sunRise">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>40</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>485</x>
+        <y>10</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lever/Coucher/Durée</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="sunDuration">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>115</y>
+        <width>80</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLCDNumber { background-color: white;  color: #00ea00;border: 0px solid black  ;}</string>
+      </property>
+      <property name="smallDecimalPoint">
+       <bool>true</bool>
+      </property>
+      <property name="digitCount">
+       <number>7</number>
+      </property>
+      <property name="segmentStyle">
+       <enum>QLCDNumber::Flat</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_30">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>115</y>
+        <width>30</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#e8ecf2; color : #17afd3; border: 0px solid #000028 ;  text-align:center;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../IMAGES/sun.png</normaloff>../IMAGES/sun.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Affichage des données</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>621</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century Schoolbook L</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#f9fafc; border:0.1em solid #3c80e5;</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>7</pointsize>
+       </font>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>TL</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TU</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TSM</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>EqTime</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>δ°</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ω°</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>H°</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ψ°</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="dataHSun">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>325</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>H.Solaires</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dataHo">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>325</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Horizontal.</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dataEq">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>325</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Equatorial.</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dataEqHo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>325</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Equatorial./Horizontal.</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dataNow">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>325</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Coordonnées Actuelles</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="clearTab">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>325</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:white; color : #17afd3; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:#78d700;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../IMAGES/clear.png</normaloff>../IMAGES/clear.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Données graphiques</string>
+    </attribute>
+    <widget class="QPushButton" name="graphDecli">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>325</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>δ°</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graphEq">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>325</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Coordonnées Equatoriales</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graphH">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>325</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>H°</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graphSun">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>325</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Heure Solaire</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graphA">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>325</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>ψ°</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QDockWidget" name="dockWidget">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>621</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <widget class="QWidget" name="dockWidgetContents"/>
+    </widget>
+    <widget class="QPushButton" name="graphAngH">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>325</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>ω°</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="graphHo">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>325</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{background-color:#17afd3; color : white; border: 0px solid #000028 ;  text-align:center;}
+QPushButton:hover{background-color:white;color:#17afd3;border: 0px solid #ecf0f5}
+QPushButton:focus{background-color:#78d700;color:white};</string>
+     </property>
+     <property name="text">
+      <string>Coordonnées Horizontales</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../IMAGES/Icons/add.png</normaloff>../../IMAGES/Icons/add.png</iconset>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#3c80e5;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="indicator">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background-color:#3c80e5; color : white; border: 0px solid #2f4f4f  ; border-radius: 0.5px; text-align:center;}</string>
+    </property>
+    <property name="text">
+     <string>Calcul des éphémérides solaire</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../IMAGES/Icons/window (1).png</normaloff>../../IMAGES/Icons/window (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>18</width>
+      <height>18</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Helio Solar Tracker. </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>450</y>
+     <width>511</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>by Halim GHAZI - USTHB-ERM - © 2021.  </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>indicator</tabstop>
+  <tabstop>Helios</tabstop>
+  <tabstop>gpsLat</tabstop>
+  <tabstop>gpsLong</tabstop>
+  <tabstop>gpsC</tabstop>
+  <tabstop>timeDate</tabstop>
+  <tabstop>timeTime</tabstop>
+  <tabstop>timeInit</tabstop>
+  <tabstop>timeCalcul</tabstop>
+  <tabstop>clear</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_16</tabstop>
+  <tabstop>pushButton_17</tabstop>
+  <tabstop>pushButton_18</tabstop>
+  <tabstop>pushButton_19</tabstop>
+  <tabstop>pushButton_27</tabstop>
+  <tabstop>pushButton_20</tabstop>
+  <tabstop>pushButton_25</tabstop>
+  <tabstop>pushButton_26</tabstop>
+  <tabstop>pushButton_24</tabstop>
+  <tabstop>pushButton_21</tabstop>
+  <tabstop>pushButton_23</tabstop>
+  <tabstop>pushButton_22</tabstop>
+  <tabstop>pushButton_28</tabstop>
+  <tabstop>pushButton_29</tabstop>
+  <tabstop>pushButton_30</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>dataEqHo</tabstop>
+  <tabstop>dataEq</tabstop>
+  <tabstop>dataHo</tabstop>
+  <tabstop>dataHSun</tabstop>
+  <tabstop>dataNow</tabstop>
+  <tabstop>clearTab</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
