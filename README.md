@@ -21,7 +21,7 @@ Afin de traiter les données graphiquement et obtenir les résultats automatique
 2.	. Présentation du programme
  
 Le programme se présente sous forme d’une interface interactive, où l'utilisateur peut calculer les coordonnées solaires (Figure IV.1), selon la date, l’heure, les coordonnées GPS et le fuseau horaire du lieu (UTC), et le jour julien.
- 
+![image](https://user-images.githubusercontent.com/42687107/139695885-fe2e3dba-69ca-4f27-bdc0-5671554d6261.png)
 Figure IV. 1 Helio Solar Tracker, Interface utilisateur
 Le programme se décompose en quatre principales parties (Figure IV.2) différente parties du programme, Helio solar tracker:
 ●	La partie indicative (zone 1), qui comme son nom l'indique, montre la date et/ou l’heure pour laquelle les calculs se font.
