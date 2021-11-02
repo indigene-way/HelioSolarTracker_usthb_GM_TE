@@ -64,3 +64,78 @@ Pour chaque graph, en faisant un clic droit sur l’image du graph il est possib
 
 Le logiciel est conçu pour être open source et offrir une aide au calcul ou autre projets relatifs au suivi du soleil, comme support ou référence, son code source sera intégré à une plateforme de partage de logiciel et de codes sources et autres types de projets (https://github.com/indigene-way/HelioSolarTracker_usthb_GM_TE). 
 
+#C CODE RESULTS
+4.	Résultats obtenus 
+On compilant le code dans un IDE (CodeBlocks),  on obtient un terminal (Figure III.1) où seront affichés les résultats de calculs ainsi que les demandes de saisi :
+
+![image](https://user-images.githubusercontent.com/42687107/139963423-4eeebbfe-16cd-4b28-9ceb-dd18928fb699.png)
+ 
+Figure III. 1 Saisi des coordonnée GPS et fuseau horaire de la zone
+Une fois les coordonnées GPS saisi le code procède aux calculs et retourne les valeurs voulues (Figure III.2). Dans un premier temps on a les données de lever/coucher du soleil ainsi que la durée d’ensoleillement (Tableau III.1 et III.2), puis les données de position du soleil et horaire en temps réel. Dans la deuxième partie des résultats s’affiche un tableau qui répertorie les éphémérides de la journée du lever au coucher du soleil (Tableau III.3).
+
+![image](https://user-images.githubusercontent.com/42687107/139963471-c4eada83-259a-4992-bf65-2e4194d3c5c6.png)
+
+Figure III. 2 Résultats de calculs en fonction du temps légal actuel et de la durée d’ensoleillement 
+
+On obtient après mise en tableau des résultats :
+Pour les données en temps réel pour le 18-06-2021 à 18:36:18:
+
+![image](https://user-images.githubusercontent.com/42687107/139964322-0d31a308-73f8-4ab8-8841-74d5f2aadce4.png)
+
+Tableau III. 1 Données d'ensoleillement pour la journée sélectionnée
+
+![image](https://user-images.githubusercontent.com/42687107/139964360-d660e774-6d56-48c6-bdf4-677be2e2cb01.png)
+
+Tableau III. 2 Données horaires et éphémérides en temps réel
+Pour les données quotidiennes :
+
+![image](https://user-images.githubusercontent.com/42687107/139964424-cfacedeb-91da-4b35-8aab-8187f6fc8174.png)
+
+La seconde partie des résultats affichés, répertorié dans deux tableaux séparés tous des coordonnées équatoriales de la journée et les coordonnées horizontales (du lever au coucher du soleil) (Figure III.3 et Tableau III.4) :
+
+![image](https://user-images.githubusercontent.com/42687107/139964444-2826b7b4-0d48-4b46-8202-28cd6c1cf110.png)
+
+Tableau III. 4 Coordonnées équatoriales et horizontales de la journée sélectionnée
+
+![image](https://user-images.githubusercontent.com/42687107/139963572-f01f94a9-5a9a-410f-8973-28393f2e3190.png)
+
+Figure III. 3 Récupération des résultats de calcul des coordonnées équatoriales et horizontales
+Afin de traiter les données graphiquement et obtenir les résultats automatiquement, un logiciel a été développé pour l’occasion (Chapitre V).
+5.	Représentation graphique des résultats
+
+●	Données équatoriales
+
+![image](https://user-images.githubusercontent.com/42687107/139963596-756b63ba-648d-41d3-91cf-088943f75c2d.png)
+ 
+Courbe III. 1 Coordonnées Graphique des équations équatoriales
+
+![image](https://user-images.githubusercontent.com/42687107/139963611-354cc6b9-ee28-4cee-a7fa-7ef13386bb50.png)
+
+Courbe III. 2 Coordonnées Graphique de l’angle horaire
+
+![image](https://user-images.githubusercontent.com/42687107/139963637-05269df5-e729-452e-b870-6582dc0db8af.png) 
+
+Courbe III. 3 Coordonnées Graphique de la déclinaison solaire
+●	Données Horizontales
+
+ ![image](https://user-images.githubusercontent.com/42687107/139963660-ecdd688d-4a17-454b-a453-27d99d88fe67.png)
+
+Courbe III. 4 Coordonnées Graphique des équations horizontales
+
+![image](https://user-images.githubusercontent.com/42687107/139963871-1127dcbf-7c0b-4bfd-94b2-632c2ca226ab.png)
+ 
+Courbe III. 5 Coordonnées Graphique Azimut
+
+![image](https://user-images.githubusercontent.com/42687107/139963881-b699e950-318e-49e2-8668-32405b7e048c.png)
+ 
+Courbe III. 6 Coordonnées Graphique Hauteur
+
+●	Données horaire
+
+![image](https://user-images.githubusercontent.com/42687107/139963906-88ec425a-e26c-483a-8443-c94e7851fca9.png)
+
+Courbe III. 7 Horaire et temps solaire vrai
+
+.	Conclusion
+
+Le choix du langage C a été fait en fonction de la proximité du langage avec le langage de programmation du module Arduino Uno (Chapitre VI), afin de directement pouvoir utiliser les résultats obtenus dans la maquette électronique, mais aussi pour des questions de fiabilité des résultats, sachant que le langage C représente l’un des langage bas niveau les plus fiables.
